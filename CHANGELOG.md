@@ -7,8 +7,13 @@ and this project adheres to [0ver](https://0ver.org).
 
 ## [Unreleased]
 
+## [0.0.1] - 2019-07-25
+
 ### Added
 
 - Working state for `cipher`, `decipher` and `render` functions
 - LICENSE
 - README
+
+[Unreleased]: https://github.com/mvisonneau/vscodes5/compare/0.0.1...HEAD
+[0.0.1]: https://github.com/mvisonneau/vscode-s5/tree/0.0.1
