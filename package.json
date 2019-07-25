@@ -1,0 +1,112 @@
+{
+	"name": "s5",
+	"displayName": "s5",
+	"description": "VSCode extension for S5 : Safely Store Super Sensitive Stuff",
+	"version": "0.0.1",
+	"publisher": "mvisonneau",
+	"repository": {
+		"type": "git",
+    "url": "https://github.com/mvisonneau/vscode-s5.git"
+	},
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:s5.cipher",
+		"onCommand:s5.decipher",
+		"onCommand:s5.render",
+		"onCommand:s5.configure"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "s5.cipher",
+				"title": "s5 cipher"
+			},
+			{
+				"command": "s5.decipher",
+				"title": "s5 decipher"
+			},
+			{
+				"command": "s5.render",
+				"title": "s5 render"
+			},
+			{
+				"command": "s5.configure",
+				"title": "s5 configure"
+			}
+		],
+		"configuration": {
+			"title": "s5",
+			"properties": {
+				"s5.provider": {
+					"type": "string",
+					"default": "aes",
+					"enum": [
+						"aes",
+						"aws",
+						"gcp",
+						"pgp",
+						"vault"
+					],
+					"enumDescriptions": [
+						"Use AES-GCM as the encryption backend",
+						"Use AWS-KMS as the encryption backend",
+						"Use GCP-KMS as the encryption backend",
+						"Use PGP as the encryption backend",
+						"Use Vault transit as the encryption backend"
+					]
+				},
+				"s5.aes.key": {
+					"type": "string"
+				},
+				"s5.aws.accessKeyID": {
+					"type": "string"
+				},
+				"s5.aws.kmsKeyARN": {
+					"type": "string"
+				},
+				"s5.aws.secretAccessKey": {
+					"type": "string"
+				},
+				"s5.aws.sessionToken": {
+					"type": "string"
+				},
+				"s5.gcp.kmsKeyName": {
+					"type": "string"
+				},
+				"s5.pgp.publicKeyPath": {
+					"type": "string"
+				},
+				"s5.pgp.privateKeyPath": {
+					"type": "string"
+				},
+				"s5.vault.address": {
+					"type": "string",
+					"default": "http://127.0.0.1:8200"
+				},
+				"s5.vault.token": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	},
+	"dependencies": {
+		"shelljs": "^0.8.2"
+	}
+}
