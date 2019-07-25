@@ -6,7 +6,7 @@ This is a [vscode](https://code.visualstudio.com/) extension for [s5](https://gi
 
 ## Installation / Configuration
 
-Once you have [installed the extension](vscode:extension/mvisonneau.s5), you will need to configure the [secret provider](https://github.com/mvisonneau/s5#encryption-backends-supported) you want to use.
+Once you have [installed the extension](https://marketplace.visualstudio.com/items?itemName=mvisonneau.s5), you will need to configure the [secret provider](https://github.com/mvisonneau/s5#encryption-backends-supported) you want to use.
 
 ```json
 // PROVIDER
