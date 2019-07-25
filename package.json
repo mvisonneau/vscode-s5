@@ -2,7 +2,7 @@
 	"name": "s5",
 	"displayName": "s5",
 	"description": "VSCode extension for S5 : Safely Store Super Sensitive Stuff",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "mvisonneau",
 	"repository": {
 		"type": "git",

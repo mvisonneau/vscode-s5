@@ -7,6 +7,8 @@ and this project adheres to [0ver](https://0ver.org).
 
 ## [Unreleased]
 
+## [0.0.2] - 2019-07-25
+
 ### Changed
 
 - Fixed configuration for `vault` provider
@@ -23,5 +25,6 @@ and this project adheres to [0ver](https://0ver.org).
 - LICENSE
 - README
 
-[Unreleased]: https://github.com/mvisonneau/vscodes5/compare/0.0.1...HEAD
+[Unreleased]: https://github.com/mvisonneau/vscodes5/compare/0.0.2...HEAD
+[0.0.2]: https://github.com/mvisonneau/vscode-s5/tree/0.0.2
 [0.0.1]: https://github.com/mvisonneau/vscode-s5/tree/0.0.1
