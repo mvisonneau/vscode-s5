@@ -17,8 +17,7 @@
 	"activationEvents": [
 		"onCommand:s5.cipher",
 		"onCommand:s5.decipher",
-		"onCommand:s5.render",
-		"onCommand:s5.configure"
+		"onCommand:s5.render"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -34,10 +33,6 @@
 			{
 				"command": "s5.render",
 				"title": "s5 render"
-			},
-			{
-				"command": "s5.configure",
-				"title": "s5 configure"
 			}
 		],
 		"configuration": {
