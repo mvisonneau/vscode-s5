@@ -86,6 +86,10 @@
 				},
 				"s5.vault.token": {
 					"type": "string"
+				},
+				"s5.vault.transitKey": {
+					"type": "string",
+					"default": "default"
 				}
 			}
 		}

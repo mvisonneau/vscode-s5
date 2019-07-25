@@ -7,6 +7,14 @@ and this project adheres to [0ver](https://0ver.org).
 
 ## [Unreleased]
 
+### Changed
+
+- Fixed configuration for `vault` provider
+
+### Removed
+
+- Handlers for unimplemented `configure` function
+
 ## [0.0.1] - 2019-07-25
 
 ### Added

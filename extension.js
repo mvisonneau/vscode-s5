@@ -61,8 +61,8 @@ function s5(command) {
 			shell.env["S5_PGP_PRIVATE_KEY_PATH"] = config.get('pgp.privateKeyPath');
 			break;
 		case 'vault':
-			shell.env["VAULT_TOKEN"] = config.get('vault.Address');
-			shell.env["VAULT_ADDRESS"] = config.get('vault.Token');
+			shell.env["VAULT_TOKEN"] = config.get('vault.address');
+			shell.env["VAULT_ADDRESS"] = config.get('vault.token');
 			cmd += ' --transit-key=' + config.get('vault.transitKey');
 			break;
 	}
